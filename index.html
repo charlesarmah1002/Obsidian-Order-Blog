@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Order</title>
+
+    <link rel="shortcut icon" href="public/images/favicon.png" type="image/png">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="primary-navigation">
+            <a href="./" class="logo">
+                <img src="public/images/obsidian-logo.png" alt="">
+            </a>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Recent Posts</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <section id="hero">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="public/images/hero-image.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="public/icons/next.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="public/icons/prev.png" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </section>
+
+            <section id="latest">
+                <h3>Latest News</h3>
+                <div class="card-container-scroll">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="public/images/tsukimichi.jpg" alt="Tsukimichi: Moonlit Fantasy">
+                        </div>
+                        <div class="text">
+                            <p>Tsukimichi: Moonlit Fantasy Season 2 Announced Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, possimus.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="public/images/apothecary diaries.jpg" alt="The Apothecary Diaries">
+                        </div>
+                        <div class="text">
+                            <p>Apothecary Diaries News: Season Update Coming S...</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="public/images/ninja kamui.jpg" alt="Ninja Kamui">
+                        </div>
+                        <div class="text">
+                            <p>New Anime Release News: Ninja Kamui</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="public/images/trafalgar law.jpg" alt="One Piece: Trafalgar Law">
+                        </div>
+                        <div class="text">
+                            <p>One Piece Reveals New Official Artwork for Gender...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+
+</html>
